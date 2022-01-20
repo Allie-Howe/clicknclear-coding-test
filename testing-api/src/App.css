@@ -1,0 +1,63 @@
+:root {
+  --bg-def: #d90368;
+  --bg-grad: linear-gradient(135deg, #d90368 20%, #f75c03);
+}
+
+.App {
+  justify-content: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: calc(10px + 2vmin);
+  color: #fff;
+  text-align: center;
+  background-color: var(--bg-def);
+  background: var(--bg-grad);
+}
+
+.container {
+  margin: 10px 0;
+  box-sizing: border-box;
+  border-radius: 20px;
+  width: 95vw;
+}
+
+.textbox {
+  border: none;
+  text-align: center;
+  font-size: 20pt;
+  border-radius: 5px;
+  width: 100%;
+  color: #333;
+}
+
+.form-area {
+  background-color: rgba(0, 0, 0, 0.267);
+  padding: 0 50px 25px;
+}
+
+.data-area {
+  background-color: hsla(0, 0%, 100%, 0.8);
+  color: #333;
+  flex: 0 1 auto;
+  overflow-y: auto;
+}
+
+@media only screen and (min-width: 800px) {
+  .logo {
+    width: 10%;
+  }
+  .description {
+    font-size: 30pt;
+  }
+  .container {
+    width: 700px;
+  }
+  .form-area {
+    padding: 0 50px 25px;
+  }
+  .App {
+    justify-content: center;
+  }
+}
